@@ -2,6 +2,12 @@
 
 If you have an item you need to fit into a shape, you can achieve this by putting a Mask on it.
 
+### DISCLAIMER
+
+**This project is currently in beta**.
+
+Core APIs are subject to change. We encourage people to try this library out and provide us feedback as we get it to a stable state.
+
 ## Setup
 
 This library is available on npm, install it with: `npm install --save react-native-mask` or `yarn add react-native-mask`.
