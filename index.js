@@ -31,6 +31,7 @@ type Props = {|
   shape?: 'circle' | 'rounded' | 'square',
   borderRadius?: number,
   wash?: boolean,
+  style?: object
 |};
 
 type State = {
@@ -108,7 +109,7 @@ export default class Mask extends React.Component<Props, State> {
     return (
       <View
         onLayout={this._onLayout}
-        style={[styles.mask, ...additionalStyles]}
+        style={[styles.mask, ...additionalStyles, this.props.style]}
       >
         {children}
         {wash ? <View style={styles.wash} /> : null}
